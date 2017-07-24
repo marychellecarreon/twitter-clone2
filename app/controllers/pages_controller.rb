@@ -6,7 +6,8 @@ class PagesController < ApplicationController
   end
 
   def Profile
-  @posts = current_user.posts.find(params[:id])
+  @posts = Post.all
+  @newPost = Post.new
   end
 
 end
