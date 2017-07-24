@@ -11,15 +11,15 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <span><div class="field">
     <%= form.label :username %>
     <%= form.text_field :username, id: :post_username %>
-  </div>
+  </div></span>
 
-  <div class="field">
+  ><span<div class="field">
     <%= form.label :body %>
     <%= form.text_area :body, id: :post_body %>
-  </div>
+  </div></span>
 
   <div class="actions">
     <%= form.submit %>

@@ -1,15 +1,190 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    background-color: #e1e8ed;
+}
+
+.rounded-image{
+	border-radius: 50%;
+}
+.navbar{
+  background-color: white;
+}
+.navbar-brand img{
+	width: 5px;
+	height: 5px;
+}
+
+.navbar-brand {
+ text-align: center;
+ position: relative;
+ left: 20%;
+}
+
+.post-panel{
+	margin-top: 20px ;
+	margin-bottom: -20px;
+}
+
+.post-body{
+	text-align: left;
+	margin-left: 15px;
+}
+
+
+.g-links{
+	opacity: 0.4;
+	font-size: 120%;
+	margin-right: -10px;
+	padding-left: 14%;
+}
+
+.post-form-panel{
+	margin-bottom: -60px;
+}
+
+ h1{
+       color: black;
+      font-weight: bold;
+    }
+
+.container-index{
+      margin-right: 15%;
+      margin-left: 15%;
+    }
+
+.text{
+      color: black;
+      font-weight: 300;
+      font-size: 150%;
+    }
+
+.footer-links{
+      text-align: center;
+      color: black;
+      margin-top: 50%;
+      font-size: 75%;
+    }
+
+.login{
+	 	float: right;
+	 	width: 250px;
+	 	height: 120px;
+	 	margin-top: 3%;
+	 	margin-right: 200px;
+	 	border: 1px solid white;
+	 	padding-top: 2%;
+	 	padding-left: 1%;
+	 	background-color: white;
+	 }
+
+.fieldemail{
+   margin-bottom: 5px;
+}
+
+.fieldemail ::placeholder{
+	font-size: 12px;
+}
+
+.fieldemail :placeholder-shown{
+	width: 220px;
+	background-color: #FFFF99;
+}
+
+.fieldpassword ::placeholder{
+       font-size: 12px;
+}
+
+.fieldpassword :placeholder-shown{
+	 width: 130px;
+	 background-color: #FFFF99;
+}
+.container.remforgot{
+	font-size: 12px;
+	padding-left: 0px;
+
+}
+.fieldrememberme{
+	float: left;
+	font-weight: normal;
+}
+
+.fieldforgot{
+	padding-top: 1px;
+	font-weight: normal;
+}
+
+.signup{
+	float: right;
+	width: 300px;
+	height: 300px;
+	margin-top: 3%;
+	border: 1px solid white;
+	padding-top: 2%;
+	padding-left: 1%;
+	background-color: white;
+	margin-left: 20px;
+	margin-right: 200px;
+}
+
+
+.signup ::placeholder{
+	font-size: 12px;
+}
+
+.signun.fieldusername :placeholder-shown{
+	width: 1000px;
+	background-color: #FFFF99;
+	margin-bottom: 1px;
+}
+.signup.fieldmail :placeholder-shown{
+	width: 1000px;
+	background-color: #FFFF99;
+	margin-bottom: 1px;
+}
+
+.signup.fieldpassword :placeholder-shown{
+	width: 1000px;
+	background-color: #FFFF99;
+	margin-bottom: 2px;
+}
+
+.actions button{
+	margin-top: 20px;
+	width: 275px;
+}
+
+.forgotpassword{
+	float: right;
+	 	width: 300px;
+	 	height: 200px;
+	 	margin-top: 3%;
+	 	margin-right: 200px;
+	 	border: 1px solid white;
+	 	padding-top: 2%;
+	 	padding-left: 1%;
+	 	background-color: white;
+
+	 }
+
+.forgotpassword.fieldemail{
+	background-color: #FFFF99;
+}
+
+.forgotpassword.fieldemail :placeholder-shown{
+	width: 1200px;
+	background-color: #FFFF99;
+
+}
+
+.forgotpassword.actions{
+	width: 1200px;
+	font-size: 8px;
+}

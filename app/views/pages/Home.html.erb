@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="col-xs-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <p>Profile</p>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <p>Trends</p>
+  </div>
+</div>
+</div>
+
+
+  <div class="col-xs-6">
+      <%= render '/components/post_form'%><br></br>
+
+      <% for @p in @posts %>
+    <div class="panel panel-default post-panel">
+      <div class="panel-body row">
+
+        <div class="col-sm-1">
+          <img src="/avatar.png" class="rounded-image" height="50px" width="50px"></img>
+        </div>
+        <div class="col-sm-11">
+          <p class="post-body"><%= @p.body %></p>
+        </div>
+
+        <div class="col-sm-12">
+          <p class="post-links">
+             <span class="glyphicon glyphicon-comment g-links" aria-hidden="true"></span>
+             <span class="glyphicon glyphicon-retweet g-links" aria-hidden="true"></span>
+             <span class="glyphicon glyphicon-heart g-links" aria-hidden="true"></span>
+             <span class="glyphicon glyphicon-envelope g-links" aria-hidden="true"></span>
+            </p>
+        </div>
+    
+      </div>
+    </div>
+      <% end %>
+
+      <div class="panel panel-default post-panel">
+        <div class="panel-body row">
+         <div class="col-sm-12">
+           <center><a href="#Top"><p class="opacity: 0.7; color: grey;">Back to Top<span class="glyphicon glyphicon-arrow-up g-links" aria-hidden="true"></span></p></a></center>
+         </div>
+         </div>
+         </div>
+         </div>
+
+  <div class="col-xs-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <p>Who to follow</p>
+      </div>
+    </div>
+  </div>
